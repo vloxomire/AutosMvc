@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonGuardar;
 import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonVer;
+import com.example.itmasterprofessionaltraining.autosmvc.Models.Auto;
 import com.example.itmasterprofessionaltraining.autosmvc.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
     private TextView tViewId;
     ListenerBotonGuardar listenerBotonGuardar;
     ListenerBotonVer listenerBotonVer;
+    private Auto unAuto;
+
+    public Auto getUnAuto() {
+        return unAuto;
+    }
+
+    public void setUnAuto(Auto unAuto) {
+        this.unAuto = unAuto;
+    }
 
     public EditText geteTextModelo() {
         return eTextModelo;

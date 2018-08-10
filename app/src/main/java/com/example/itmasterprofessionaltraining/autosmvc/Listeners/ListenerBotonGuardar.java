@@ -21,5 +21,6 @@ public class ListenerBotonGuardar implements View.OnClickListener{
         context.getUnAuto().setAnio(Integer.valueOf(context.geteTextAnio().getText().toString()));
         context.getUnAuto().setKm(Integer.valueOf(context.geteTextKm().getText().toString()));
 
+        context.getControladorAuto().guardarAuto(context.getUnAuto());
     }
 }

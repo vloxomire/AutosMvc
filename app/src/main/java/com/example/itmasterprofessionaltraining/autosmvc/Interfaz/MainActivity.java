@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.itmasterprofessionaltraining.autosmvc.Controllers.ControladorAuto;
 import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonGuardar;
 import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonVer;
 import com.example.itmasterprofessionaltraining.autosmvc.Models.Auto;
@@ -18,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
     ListenerBotonGuardar listenerBotonGuardar;
     ListenerBotonVer listenerBotonVer;
     private Auto unAuto;
+    private ControladorAuto controladorAuto = new ControladorAuto();
+
+    public ControladorAuto getControladorAuto() {
+        return controladorAuto;
+    }
 
     public Auto getUnAuto() {
         return unAuto;

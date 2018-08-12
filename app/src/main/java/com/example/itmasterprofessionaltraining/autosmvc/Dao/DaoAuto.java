@@ -10,7 +10,6 @@ public class DaoAuto {
     public void addAuto(Auto unAuto){
         autoArrayList.add(unAuto);
     }
-
     public Integer getSizeArrayAuto(){
         return autoArrayList.size();
     }

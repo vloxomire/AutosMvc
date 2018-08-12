@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
         buttonGuardar = findViewById(R.id.buttonGuardar);
         buttonVer = findViewById(R.id.buttonVer);
 
-        ListenerBotonGuardar = new ListenerBotonGuardar(this);
-        ListenerBotonVer = new ListenerBotonVer(this);
+        listenerBotonGuardar = new ListenerBotonGuardar(this);
+        listenerBotonVer = new ListenerBotonVer(this);
 
         buttonGuardar.setOnClickListener(listenerBotonGuardar);
         buttonVer.setOnClickListener(listenerBotonVer);

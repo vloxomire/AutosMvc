@@ -23,6 +23,6 @@ public class ListenerBotonGuardar implements View.OnClickListener{
         context.getUnAuto().setKm(Integer.valueOf(context.geteTextKm().getText().toString()));
 
         context.getControladorAuto().guardarAuto(context.getUnAuto());
-        Toast.makeText(context, "GUARDADO" + toString().valueOf(context.getControladorAuto()),Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "GUARDADO " + toString().valueOf(context.getControladorAuto().cantidadAuto()),Toast.LENGTH_SHORT).show();
     }
     }

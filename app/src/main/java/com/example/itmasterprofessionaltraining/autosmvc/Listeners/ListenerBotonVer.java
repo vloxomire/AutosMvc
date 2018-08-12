@@ -15,7 +15,10 @@ public class ListenerBotonVer implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
+    context.geteTextModelo().setText(context.getUnAuto().getModelo());
+    context.geteTextMarca().setText(context.getUnAuto().getMarca());
+    context.geteTextAnio().setText(context.getUnAuto().getAnio());
+    context.geteTextKm().setText(context.getUnAuto().getKm());
 
 
     }

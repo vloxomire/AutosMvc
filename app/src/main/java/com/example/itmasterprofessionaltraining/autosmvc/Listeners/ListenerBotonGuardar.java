@@ -1,6 +1,7 @@
 package com.example.itmasterprofessionaltraining.autosmvc.Listeners;
 
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.itmasterprofessionaltraining.autosmvc.Interfaz.MainActivity;
 import com.example.itmasterprofessionaltraining.autosmvc.Models.Auto;
@@ -22,5 +23,6 @@ public class ListenerBotonGuardar implements View.OnClickListener{
         context.getUnAuto().setKm(Integer.valueOf(context.geteTextKm().getText().toString()));
 
         context.getControladorAuto().guardarAuto(context.getUnAuto());
+        Toast.makeText(context, "GUARDADO" + toString().valueOf(context.getControladorAuto()),Toast.LENGTH_SHORT).show();
     }
-}
+    }

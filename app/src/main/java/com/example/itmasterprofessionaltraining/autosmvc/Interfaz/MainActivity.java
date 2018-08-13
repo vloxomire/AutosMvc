@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         this.eTextKm = eTextKm;
     }
 
-    public void settViewId(TextView tViewId) {
+    public void settViewId(String tViewId) {
         this.tViewId = tViewId;
     }
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         eTextModelo =findViewById(R.id.eTextModelo);
-        eTextMarca =findViewById(R.id.eTextAnio);
+        eTextMarca =findViewById(R.id.eTextMarca);
         eTextAnio =findViewById(R.id.eTextAnio);
         eTextKm =findViewById(R.id.eTextKm);
         tViewId = findViewById(R.id.tViewId);

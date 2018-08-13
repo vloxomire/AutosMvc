@@ -17,8 +17,8 @@ public class ListenerBotonVer implements View.OnClickListener {
     public void onClick(View view) {
     context.geteTextModelo().setText(context.getUnAuto().getModelo());
     context.geteTextMarca().setText(context.getUnAuto().getMarca());
-    context.geteTextAnio().setText(context.getUnAuto().getAnio());
-    context.geteTextKm().setText(context.getUnAuto().getKm());
+    context.geteTextAnio().setText(Integer.valueOf(context.getUnAuto().getAnio()));
+    //context.geteTextKm().setText(context.getUnAuto().getKm());
 
 
     }

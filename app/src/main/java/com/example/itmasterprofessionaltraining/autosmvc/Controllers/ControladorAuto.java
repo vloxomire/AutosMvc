@@ -12,7 +12,7 @@ public class ControladorAuto {
     public void guardarAuto(Auto datoAuto){
         daoAuto.addAuto(datoAuto);
     }
-    public TextView cantidadAuto(){
+    public Integer cantidadAuto(){
         return daoAuto.getSizeArrayAuto();
     }
     public Auto getAuto(Integer i){

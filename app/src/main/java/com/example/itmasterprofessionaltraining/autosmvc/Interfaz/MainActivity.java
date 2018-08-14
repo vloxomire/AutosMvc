@@ -8,18 +8,30 @@ import android.widget.TextView;
 
 import com.example.itmasterprofessionaltraining.autosmvc.Controllers.ControladorAuto;
 import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonGuardar;
-import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonVer;
+import com.example.itmasterprofessionaltraining.autosmvc.Listeners.ListenerBotonObtener;
 import com.example.itmasterprofessionaltraining.autosmvc.Models.Auto;
 import com.example.itmasterprofessionaltraining.autosmvc.R;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText eTextModelo, eTextMarca, eTextAnio, eTextKm;
-    private Button buttonGuardar, buttonVer;
-    private TextView tViewId;
+    private EditText eTextModelo, eTextMarca, eTextAnio, eTextKm, etId;
+    private Button buttonGuardar, buttonObtener;
     ListenerBotonGuardar listenerBotonGuardar;
-    ListenerBotonVer listenerBotonVer;
+    ListenerBotonObtener listenerBotonObtener;
     private Auto unAuto;
     private ControladorAuto controladorAuto = new ControladorAuto();
+
+
+    public Button getButtonObtener() {
+        return buttonObtener;
+    }
+
+    public EditText getEtId() {
+        return etId;
+    }
+
+    public void setEtId(EditText etId) {
+        this.etId = etId;
+    }
 
     public ControladorAuto getControladorAuto() {
         return controladorAuto;
@@ -65,9 +77,6 @@ public class MainActivity extends AppCompatActivity {
         this.eTextKm = eTextKm;
     }
 
-    public void settViewId(String tViewId) {
-        this.tViewId = tViewId;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,14 +87,14 @@ public class MainActivity extends AppCompatActivity {
         eTextMarca =findViewById(R.id.eTextMarca);
         eTextAnio =findViewById(R.id.eTextAnio);
         eTextKm =findViewById(R.id.eTextKm);
-        tViewId = findViewById(R.id.tViewId);
+        etId = findViewById(R.id.etId);
         buttonGuardar = findViewById(R.id.buttonGuardar);
-        buttonVer = findViewById(R.id.buttonVer);
+        buttonObtener = findViewById(R.id.buttonObtener);
 
         listenerBotonGuardar = new ListenerBotonGuardar(this);
-        listenerBotonVer = new ListenerBotonVer(this);
+        listenerBotonObtener = new ListenerBotonObtener(this);
 
         buttonGuardar.setOnClickListener(listenerBotonGuardar);
-        buttonVer.setOnClickListener(listenerBotonVer);
+        buttonObtener.setOnClickListener(listenerBotonObtener);
     }
 }

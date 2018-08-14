@@ -24,6 +24,5 @@ public class ListenerBotonGuardar implements View.OnClickListener{
 
         context.getControladorAuto().guardarAuto(context.getUnAuto());
         Toast.makeText(context, "GUARDADO " + toString().valueOf(context.getControladorAuto().cantidadAuto()),Toast.LENGTH_SHORT).show();
-        context.settViewId(toString().valueOf(context.getControladorAuto().cantidadAuto()));
     }
 }

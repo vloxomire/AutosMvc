@@ -35,18 +35,22 @@
         android:text="GUARDAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <Button
-        android:id="@+id/buttonVer"
-        android:text="VER"
+        android:id="@+id/buttonObtener"
+        android:text="Obtener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/tViewId"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="ID" />
+    </LinearLayout>
 
 
 </LinearLayout>
